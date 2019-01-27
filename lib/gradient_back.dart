@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
 class GradientView extends StatelessWidget{
 
+  String title = "Popula";
+  GradientView(this.title);
   Widget build(BuildContext context){
 
     return  Container(
@@ -18,7 +19,18 @@ class GradientView extends StatelessWidget{
               tileMode:TileMode.clamp,
             ),
           ),
-        );
+
+      child: Text(
+        title,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 30.0,
+          fontFamily: "Lato",
+          fontWeight: FontWeight.bold
+        ),
+      ),
+      alignment: Alignment(-0.9,-0.6),
+    );
 
   }
 
